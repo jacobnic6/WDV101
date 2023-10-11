@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Float Property Example</title>
+
+<!-- 
+With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it. Float is very often used for images as shown in this example.
+
+Elements are floated horizontally, this means that an element can only be floated left or right, not up or down. A floated element will move as far to the left or right as it can. Usually this means all the way to the left or right of the containing element. The elements after the floating element will flow around it.The elements before the floating element will not be affected.
+
+If an image is floated to the right, a following text flows around it, to the left.
+
+Create a dependent class for the image element to float left. Be sure to add some margin to the right. Then apply that class to the first and third image in the body below. 
+  -->
+
+	<style>
+		img.left{
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+		
+		img.right {
+			float: right;
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.clear {
+			clear: both;
+		}
+		
+		
+
+	</style>
+</head>
+<body>
+<h1>Roses & Orchids</h1>
+<h2>What is the difference?</h2>
+<p><img src="images/white_rose.jpg" alt="White Rose" class="left"/></p>
+<p><img src="images/pink_rose.jpg" alt="Pink Rose" /></p>
+<p><img src="images/pink_orchid.jpg" alt="Pink Orchid" class="left"/></p>
+<p><img src="images/darkpink_rose.jpg" alt="Dark Pink Rose" /></p>
+
+
+
+<h3>All About Roses</h3>
+<!-- Apply the left float class to the image below. The text will wrap around the image.-->
+<p><img src="images/pink_rose.jpg" alt="Pink Orchid" class="left"/></p>
+
+<p>A rose is a woody perennial of the genus Rosa, within the family Rosaceae. There are over 100 species and thousands of cultivars. They form a group of plants that can be erect shrubs, climbing or trailing with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds. Most species are native to Asia, with smaller numbers nativeto Europe, North America, and northwest Africa. Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.</p>
+<p></p>
+
+
+<!--The h3 must apply the class "clear" in order to clear the float and appear below the images. Create an independent class to clear the float. Then apply that class to the h3 element below.-->
+
+<h3 class="clear">All About Orchids</h3>
+<!--If an image is floated to the left, a following text flows around it, to the right.-->
+
+<!--Let's now make the image below float to the right. Create a dependent class for img element to float to the right. Remember to add some margin to the left. Apply that class to the image below--> 
+
+<p><img src="images/pink_orchid.jpg" alt="Pink Orchid" class="right"/></p>
+
+<p>Believe it or not, orchids make up the planet's largest group of blooming flowers. They grow in every continent but one (sadly, you won't find them in icy Antarctica), and come in hundreds of shapes and sizes. Also, about 99% of orchids today are within reach and available for cultivation, while 1% of tropical varieties still grow in virtually inaccessible habitats and have only been seen a handful of times.</p>
+
+</body>
+</html>

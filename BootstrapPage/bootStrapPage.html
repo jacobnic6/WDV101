@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+  <!-- Get started by adding the necessary bootstrap components in the head section: the link to the stylesheet, the viewport meta.Then add the script code in the bottom just before the close of the body. (see www.getbootstrap.com). We will use our own css for styling-->
+
+
+  <style>
+    /*Selector for viewing Bootstraps Grid in action*/
+    header {
+        background-color: lightskyblue;
+        padding: 15px 15px;
+		
+    }
+    section {
+        background-color: lightgray;
+        padding: 50px;
+		margin-bottom: 50px;
+    }
+    footer {
+        background-color: lightgreen;
+		padding-top: 30px;
+		margin-top: 50px;
+		
+    }
+    [class^='col-'] {
+        outline: 2px solid rgba(135,74,13,1.00);
+    }
+    .row {
+        outline:0px solid blue;
+    }
+    .container {
+        outline: 6px solid green;
+		
+		
+    }
+	  #searchBar{
+		  padding: 10px;
+	  }
+	  #headerPic{
+		  margin: 0;
+		  padding: 0;
+		  
+			  
+	  }
+	  #demo{
+		  padding-bottom: 50px;
+	  }
+	  
+    /* You can customize Bootstrap's classes and/or add your own CSS styling to a Bootstrap page.*/
+    
+  </style>
+
+</head>
+
+<body>
+
+  <header  class="bg-dark">
+	  
+    <div class="container bg-primary position-relative flex-fill text-center" id="header">
+		
+		<div id="headerText" class="" style="font-size: 200%">
+			<h1>WDV101 Intro HTML and CSS</h1>
+			<h2>Unit-5 Bootstrap Framework</h2>
+			<p>The following are bootstrap buttons</p>
+		
+		<button type="button" class="btn btn-secondary">About</button>
+		<button type="button" class="btn btn-secondary">Contact</button>
+		<button type="button" class="btn btn-secondary">Blog</button>
+		</div>
+        <!-- add some bootstrap buttons-->
+    </div>
+  </header>
+
+  <!--Add a bootstrap navbar. Add the aporopriaqte bootstrap classes to each component. (w3schools) Then style using one of bootstraps colors. OR Copy and paste the code. Then enter your own hyperlinks and  text. You can use bootstraps color and background styling OR your own CSS.-->
+
+  <nav class="navbar navbar-light shadow" style="background-color: #e3f2fd;">
+	 <ul class="nav justify-content-center nav-pills">
+		  <li class="nav-item">
+			<a class="nav-link active text-light bg-black" href="../BootstrapPage/bootStrapPage.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link text-black" href="https://dmacc.edu/Pages/welcome.aspx?gclid=CjwKCAjw0ZiiBhBKEiwA4PT9z2yoDZ3BdytBT_HGY7B9J692-lJF5UniP2mW9m0DHHCTaj0gawS_2BoCx8MQAvD_BwE">DMACC</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link text-black" href="#!">About</a>
+		  </li>
+	</ul>
+	  <form id="searchBar" class="form-inline d-flex justify-content-end">
+    <input class="form-control mr-sm-2 justify-content-end" type="text" placeholder="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0 justify-content-end" type="submit">Search</button>
+  </form>
+
+	  
+		
+		
+    <!-- create a link to the dmacc web page.-->
+    
+
+  </nav>
+
+  <section>
+	 <div id="demo" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-inner shadow-lg">
+			<div class="carousel-item active">
+			  <img src="astro.jpg" alt="astronaut" class="d-block" style="width:100%">
+			</div>
+			<div class="carousel-item">
+			  <img src="planet.jpg" alt="planet" class="d-block" style="width:100%">
+			</div>
+			<div class="carousel-item">
+			  <img src="shuttle.jpg" alt="shuttle" class="d-block" style="width:100%">
+			</div>
+		  </div>
+
+		  <!-- Left and right controls/icons -->
+		  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		  </button>
+	  </div>
+	  
+	  
+    <div class="container rounded">
+		<div class="row text-black" style="background-color: #e3f2fd;">
+			<div class = "col-sm">
+				<h3 class= "display-3">Column 1</h3>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+			</div>
+			
+			<div class = "col-sm-6 text-center">
+				<h3 class= "display-3">Column 2</h3>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    
+			
+			</div>
+			<div class = "col-sm">
+				<h3 class= "display-3">Column 3</h3>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+			
+			</div>
+		
+		</div>
+      <!-- Add a div class of row, then add a class of col to the divs. Bootstrap will automatically stack the columns when the viewport gets smaller. Do two columns first to see two columns. Then remove the comment and add a col class to the third. Then adjust the cols so that the middle col is larger than the other two. Style the text and background in each column using bootstrap background color to each column-->
+
+      
+    </div><!--close the container div here-->
+  </section>
+  <!--
+   Copy and past the second column to create a third column.-->
+
+  <!-- add bootstrap classes to color the background and text of the footer.-->
+
+  <footer class="bottom bg-success text-white text-center display-6 align-bottom" style="height: 100px;">
+    <p>Footer content here.</p>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <!--add the bootstrap jquery script here-->
+
+</body>
+</html>

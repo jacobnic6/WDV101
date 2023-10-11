@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{
+	max-width: 1024px;
+	margin: auto;
+	background-color:beige;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+}
+.pageBody{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px;
+
+}
+.ownersPic{
+	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	
+}
+.pageTop{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+.footer{
+	position: relative;
+	left: 0;
+	bottom: 0;
+	margin-top: 30px; 
+	width: 100%;
+	background-color: rgba(27,44,74,1.00);
+	color: white;
+	text-align: center;
+}
+
+.row{
+	display: flex;
+}
+.column{
+	flex: 1;
+	
+}
+.image-gallery{
+	column-count: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items:center;
+	flex-wrap: nowrap;
+	
+}
+figure.image-item {
+  border: 1px solid rgba(36,101,132,1.00);
+	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+	
+	
+
+}
+figcaption{
+	text-align: center;
+	font-family: 'Prompt', sans-serif;
+	font-size: 150%;
+}
+
+figure.image-item img{
+	max-width: 250px;
+	max-height: 250px;
+}
+figure{
+	margin: 5px;
+	
+}
+
+h1{
+	font-size: 300%;
+}
+p{
+	margin: 30px;
+}
+p em{
+	font-weight: 700;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+  	padding: 0;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	background-color: rgba(27,44,74,1.00);
+	overflow: hidden;
+	float: center;
+	
+}
+
+nav ul li:last-child {
+	margin-right: 0px;
+}
+
+nav {
+	background-color: rgba(27,44,74,1.00);
+	color: white;
+	text-align: center;
+	padding-top: 0px;
+	margin-top: 0px;
+	
+	
+}
+
+nav a:link, nav a:visited {
+	color:white;
+	text-decoration: none;
+	
+}
+
+nav a:hover, nav a:focus {
+	background-color:dimgray;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(27,44,74,1.00);
+}
+
+li {
+	float: center;
+}
+
+li a {
+	display: block;
+	color: white;
+	 padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:dimgray;
+}
+
+.active {
+	background-color:cornflowerblue;
+}
+
+#inline {
+	padding: 0;
+	margin:0;
+	display:inline-grid;
+}
+body {
+	background-image: url("43081.jpg");
+	color: black;
+	background-repeat: repeat;
+	font-family: 'Prompt', sans-serif;
+	
+}
